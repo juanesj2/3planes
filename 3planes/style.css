@@ -1,0 +1,81 @@
+body{
+    height: 100vh;
+    background-color: blue;
+}
+.planes{
+    border: 2px white solid;
+    height: 80%;
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+}
+.titulo{
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.precio{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+.plan{
+    border-radius: 10px;
+    width: 33%;
+    background-color: white;
+    text-align: center;
+}
+.plan a{
+    text-decoration: none;
+    color: blue;
+    border: 2px blue solid;
+    padding: 10px;
+    border-radius: 5px;
+}
+.plan a:hover{
+    text-decoration: none;
+    border: 2px blue solid;
+    color: white;
+    background-color: blue;
+}
+.plan:hover{
+    background-color: beige;
+}
+
+/*Movil*/
+@media (max-width: 700px){
+    body{
+        background-color: red;
+    } 
+    .planes {
+        display: block;
+        height: auto;
+    }
+    .plan{
+        width: 90%;
+        height: auto;
+        margin: auto;
+        padding-bottom: 15px;
+    }
+}
+
+/*Tablet*/
+@media (min-width:700px) and (max-width: 820px){
+    body{
+        background-color: green;
+    } 
+    .planes{
+        flex-wrap: wrap;
+        height: auto;
+    }
+    #caja1{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    #caja2,#caja3{
+        width: 40%;
+    }
+    .plan{
+        padding-bottom: 15px;
+    }
+}
+
